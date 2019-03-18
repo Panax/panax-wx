@@ -1,0 +1,54 @@
+<!--logs.wxml-->
+<!-- <form report-submit='true' bindsubmit="submit"> -->
+<view class='flex'>
+  <view class='nav nav1'>
+    <view>
+      <!-- <image wx:if="{{one}}" class='numSize' src="../../imgs/one.png"></image>
+      <image class='numSize' wx:if="{{!one}}" src="../../imgs/one1.png"></image> -->
+    </view>
+    <view class="{{one?'text2':'text1'}}">1.提交问题</view>
+  </view>
+  <image class='arrowImg' src='../../imgs/arrow.png'></image>
+  <view class='nav'>
+    <!-- <image wx:if="{{two}}" class='numSize' src="../../imgs/two.png"></image>
+    <image class='numSize' wx:if="{{!two}}" src="../../imgs/two1.png"></image> -->
+    <text class="{{two?'text2':'text1'}}">2.进入知识库</text>
+  </view>
+  <image class='arrowImg' src='../../imgs/arrow.png'></image>
+  <view class='nav'>
+    <!-- <image wx:if="{{three}}" class='numSize' src="../../imgs/three.png"></image>
+    <image class='numSize' wx:if="{{!three}}" src="../../imgs/three1.png"></image> -->
+    <text class="{{three?'text2':'text1'}}">3.导师解答</text>
+  </view>
+</view>
+<view>
+  <view wx:if="{{!one}}">
+    <view>
+      <textarea class='content' type="text" placeholder='描述的问题越详细，得到的解答越精准' bindinput='getProblem' name="input" value='{{problem}}' placeholder-style='color:#ccc;' focus="{{autoForce}}"></textarea>
+      <view class='style' bindtap='complete'>提交</view>
+    </view>
+      <view class='example'>
+      <view class='descript'>建议用以下样式描述问题以获取最佳答案：</view>
+      <view class='standard'>我是一个工作一年的互联网公司市场经理，要在一个星期内举办一个新品发布会，如何开始做项目规划？</view>
+    </view>
+
+
+<view class='potion'>
+    <button class='{{!tape?"submit1":"submit"}}' bindlongpress='longtouch' bindtouchstart='touchstart' bindtouchend='touchend'>
+      <image class='tapeImg' wx:if="{{tape}}" src="../../imgs/tape1.png"></image>
+      <image class='tapeImg1'  wx:if="{{!tape}}" src="../../imgs/tape.png"></image>
+    </button>
+    <view class='put_in'>按住说话，自动输入</view>
+</view>
+
+  
+  </view>
+</view>
+
+<view class='center' wx:if="{{!two}}">
+  <view>精准匹配解答ing...</view>
+  <view>{{mess}}</view>
+  <image class='xiniu' src="../../imgs/xiniu.png"></image>
+</view>
+<!-- <button class='submit' formType="submit">提交</button> -->
+<!-- </form> -->

@@ -1,0 +1,58 @@
+/* components/login/login.wxss */
+page {
+  height: 100%;
+}
+
+.hiddenScroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.coverl{
+  position: fixed;
+  left: 0;
+  top:0;
+  background: #fff;
+  height: 100%;
+  width: 750rpx;
+  z-index: 999
+}
+
+.bgColor{
+    margin: 198rpx auto;
+    width: 215rpx;
+    height: 83rpx;
+    line-height: 83rpx;
+    border-radius: 8rpx;
+    color: #CD234A;
+    font-size: 34rpx;
+    background: #fff;
+    border:1rpx solid #CD234A;
+}
+.bgColor::after{
+  border: none;
+}
+.middle{
+  border: 1rpx solid transparent;
+  /* margin-top: 200rpx; */
+}
+.title_name{
+  text-align: center;
+  font-size:34rpx;
+  margin-top: 63rpx;
+  line-height: 34rpx;
+  color: #4a4a4a;
+}
+.ll{
+  margin-top: 20rpx;
+}
+.logo_imgs{
+  width: 750rpx;
+  text-align: center;
+
+}
+.logo_img{
+  margin-top: 200rpx;
+  height: 192rpx;
+  width: 370rpx;
+}

@@ -1,0 +1,162 @@
+@import '../../wxParse/wxParse.wxss';
+page{
+  background: #fff;
+}
+.body{
+  width: 700rpx;
+  margin: 20rpx auto;
+}
+.title{
+  font-size: 36rpx;
+  line-height: 60rpx;
+  color: #333;
+  font-weight: bold;
+}
+.name1{
+  color: #333;
+  font-size: 32rpx;
+  line-height: 54rpx;
+  /* margin: 30rpx 0; */
+}
+.proportion{
+  height: 8rpx;
+  border-radius: 4rpx 0 0 4rpx;
+  display: inline-block;
+  background: #6ab5e4;
+}
+.bg{
+  border-radius: 0 4rpx 4rpx 0;
+  background: #f05158;
+  margin-left: 4rpx;
+}
+.attitude{
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+}
+.yes{
+  height: 70rpx;
+  width: 280rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background: #e0edf9;
+  color: #2e7bbf;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.yes::after{
+  border: none;
+}
+.btn::after{
+  border: none;
+}
+.no{
+  background: #fde4de;
+  color: #f05158;
+}
+
+.btn{
+  height: 70rpx;
+  width: 280rpx;
+  display: flex;
+  border-radius: 10rpx;
+  background:#2e7bbf;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.bg1{
+  background: #f05158;
+}
+.right_img{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 10rpx;
+}
+.range{
+  margin: 20rpx 0;
+}
+
+.criticism{
+  width: 710rpx;
+  margin: 20rpx auto;
+  display: flex;
+  font-size: 28rpx;
+  justify-content: flex-start;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.criticism_name{
+  display: flex;
+  width: 600rpx;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.black{
+  height: 90rpx;
+  width: 90rpx;
+  border-radius: 46rpx;
+  border: 1rpx solid #ccc;
+  margin-right: 20rpx;
+}
+
+.date2{
+  height: 34rpx;
+  width: 34rpx;
+  margin-top: 4rpx;
+}
+
+.lectureBack{
+  text-indent: 30rpx;
+}
+.lectureBack span{
+  color: #ccc;
+}
+
+
+.spancolor{
+  margin-left: 10rpx;
+  color:#8a8a8a;
+  font-size: 30rpx;
+}
+.date-size{
+  font-size: 24rpx;
+  color:#8a8a8a;
+  margin-right: 20rpx;
+}
+.write{
+  color:#CF0047;
+}
+.commentInput{
+  position: fixed;
+  bottom:0;
+  left: 0;
+}
+.inputComent{
+  border: 1rpx solid #ccc;
+  width: 580rpx;
+  min-height: 80rpx;
+  padding-left: 20rpx;
+  background: #fff;
+}
+.sumbit{
+  width: 150rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: #CF0047;
+  color: #fff;
+  
+}
+.downLine{
+  border-bottom: 1rpx solid #ccc;
+}
+
+.sendComment{
+
+}

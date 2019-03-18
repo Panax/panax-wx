@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-with-animation  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<view id="top" style="height: 100%;">
+<view>
+  <image class='answer_imgs' src="../../imgs/answer.png"></image>
+  <view class='slogan'>一问一答，解决一个职场难题</view>
+</view>
+<form  report-submit='true' bindsubmit="submit">
+<view class='search_top'>
+<input placeholder="   请输入你想解决的职场问题？" placeholder-style='color:#ccc;' disabled='true' class='search'></input>
+<image class='search_imgs'  src='../../imgs/search.png'></image>
+<button class='submit' formType="submit"></button>
+</view>
+ <view class='center mager'><text class=''>{{num}}</text>人提交了职场问题并获得满意解答</view>
+ <!-- <text>{{mess}}</text> -->
+ <!-- <view class='center'>向犀牛问答了提出职场问题</view>
+ <view class='center'>并获得了有帮助的解答</view> -->
+</form>
+<view bindtap='toViewid'>
+  <image class='down_img'  src='../../imgs/Arrow_Down.png'></image>
+  </view>
+</view>
+<view class='margin'>
+<view class='describe'>犀牛问答能帮您做什么？</view>
+<view>犀牛问答是一个面向新生代职场人的管理知识学习平台，"一问一答"构建高效、精准的学习体验，致力于解决你在新商业时代遇到的具体的、场景化的管理问题。</view>
+<view class='title'>你只需要提出问题：</view>
+<view>在犀牛问答，你只需要提出你的职场问题，平台智能算法会即刻匹配给你至少一条来自专业导师的解答，当然，你的职场问题描述越具体、详细，就越容易获得精准的解决方案。</view>
+<view>
+建议问题描述包括：你的行业、职业身份、具体问题场景、相关人员、以及你需要解答的困惑点等。</view>
+<view class='title' >犀牛给你解答：</view>
+<view>犀牛问答联手众多商业管理大师、知名企业高管共同打造了专业生产的问答知识库，目前我们围绕“职场全场景”共积累了1000+原创解答内容，且每天都快速增加中，细分至六级的问题维度，从经典商业管理理论的实践应用，到职场实战经验的提炼总结，等待你带着问题来随时“调取”。</view>
+<view class='bottom'>犀牛问答希望未来能成为你的职场问题私人导师，助力你的个人职业成长学习，欢迎你将犀牛推荐给朋友。</view>
+<view class='bottom'>加入犀牛问答：hr@jikezhishi.com</view>
+<view>和产品经理聊聊：Mr-jike（微信号)</view>
+</view>
+</scroll-view>
+
+
+<login id="login" wx:if="{{loginIsShow}}"></login> 

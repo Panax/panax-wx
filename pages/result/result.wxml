@@ -1,0 +1,54 @@
+<!--pages/result/result.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class='body'>
+  <view class='title'>{{detail.title}}</view>
+  <view class='name1'>
+<template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+  <view class='attitude'>用户表态</view>
+  <view class='flex'>
+    <view style='color:#6ab5e4;'>赞同{{sure}}%</view>
+    <view style='color:#f37d82;'>不赞同{{nosure}}%</view>
+  </view>
+  <view class='range flex'><text class='proportion' style='width:{{long1}}rpx'></text><text class='proportion bg' style='width:{{long2}}rpx'></text></view>
+  <view class='flex1'>
+    <button class='yes' wx:if='{{clickshow}}' data-id = '1' disabled="{{click}}" bindtap='yes'>赞同</button>
+    <button class='btn' wx:if='{{!clickshow}}'>
+      <image class='right_img' src="../../imgs/blue_right.png"></image>
+      <view>赞同</view>
+    </button>
+    <button class='yes no' wx:if='{{clickshow1}}' data-id = '2' disabled='{{click1}}' bindtap='yes'>不赞同</button>
+     <button class='btn bg1' wx:if='{{!clickshow1}}'>
+      <image class='right_img' src="../../imgs/red_right.png"></image>
+      <view>不赞同</view>
+    </button>
+  </view>
+<view class='flex downLine'>
+  <view class='attitude manger'>用户评论</view>
+  <view class='write' bindtap='inputShow'>写评论</view>
+</view>
+  <view class='criticism' wx:for="{{lsitCSComment}}" wx:key="index">
+  <view>
+  <image class='black' src='{{item.headurl}}'></image>
+  </view>
+  <view>
+    <view class='criticism_name'>
+      <view>{{item.username}}</view>
+      <view>
+        <image class='date2' bindtap='Fabulous' data-index="{{index}}" wx:if='{{item.comment_status ==2}}' src='../../imgs/course_detail/praise_empty.png'></image>
+        <image class='date2' data-index="{{index}}" bindtap='cancelFabulous' wx:if='{{item.comment_status ==1}}' src='../../imgs/course_detail/praise_real.png'></image>
+        <span class='spancolor'>{{item.goodNums}}</span>
+      </view>
+      <view class='date-size'>{{item.createtime}}</view>
+    </view>
+    <view>{{item.content}}</view>
+    <view class='lectureBack' wx:if="{{item.commentContext!=null && item.commentContext!= ''}}">讲师<span>回复</span>{{item.commentContext}}</view>
+  </view>
+</view>
+
+</view>
+
+<view class="flex commentInput" style='bottom:{{bottom}}' wx:if="{{inputShow}}">
+  <input class='inputComent' bindfocus="focusHeight" focus bindblur="loseblur" value=''adjust-position="{{false}}" placeholder='请输入你的观点' bindinput='getValue'></input>
+  <view class='sumbit' bindtap='sendComment'>提交</view>
+</view>

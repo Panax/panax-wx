@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/answer/answer",
+    "pages/result/result"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "backgroundColor":"#fff",
+    "backgroundColorBottom":"#fff"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#CF0047",
+    "backgroundColor":"#fff",
+    "list": [
+      {
+        "iconPath": "./imgs/problem1.png",
+        "selectedIconPath": "./imgs/problem.png",
+        "pagePath": "pages/index/index",
+        "text": ""
+      },
+      {
+        "iconPath": "./imgs/selected1.png",
+        "selectedIconPath": "./imgs/selected.png",
+        "pagePath": "pages/answer/answer",
+        "text": ""
+      },
+      {
+        "iconPath": "./imgs/mine1.png",
+        "selectedIconPath": "./imgs/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": ""
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

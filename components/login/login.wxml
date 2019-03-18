@@ -1,0 +1,18 @@
+<!--components/login/login.wxml-->
+<view class='coverl' wx:if="{{isShow}}">
+ <view class='logo_imgs'>
+  <image class='logo_img' src="../../imgs/Bitmap.png"></image>
+ </view>
+ <view class='title_name'>随时提问一秒回复</view>
+<view class='title_name ll'>你的私人职场导师</view>
+
+<view class="middle">
+<button 
+    class='bgColor'
+    wx:if="{{canIUse}}" 
+    open-type="getUserInfo" 
+    bindgetuserinfo="bindGetUserInfo"
+>授权登录</button>
+<view wx:else>请升级微信版本</view>
+</view>
+</view>

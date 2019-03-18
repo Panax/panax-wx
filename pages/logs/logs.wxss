@@ -1,0 +1,129 @@
+.content{
+  width:630rpx;
+  height:207rpx;
+  background:rgba(255,255,255,1);
+  border:1rpx solid rgba(204, 204, 204, 1);
+  box-shadow:0px 19rpx 8rpx 0px rgba(80,80,80,0.04);
+  border-radius:10rpx;
+  margin: 30rpx auto 10rpx;
+  padding: 30rpx;
+}
+.numSize{
+  height: 35rpx;
+  width: 30rpx;
+  margin-right: 10rpx;
+  display: block;
+}
+.text2{
+  color: #ccc;
+}
+.nav{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.text1{
+  color: #CF0047;
+}
+.arrowImg{
+  height: 20rpx;
+  width: 15rpx;
+  margin: 0 30rpx;
+}
+.nav1{
+  margin-left: 54rpx;
+}
+.flex{
+  height: 100rpx;
+  width: 750rpx;
+  background: #fff;
+  display: flex;
+  font-size: 32rpx;
+  color: #999;
+  justify-content: flex-start;
+  margin-top: 20rpx;
+  align-items: center;
+}
+
+.example{
+  width: 690rpx;
+  margin: 70rpx auto 0;
+}
+
+.tapeImg1{
+  height: 195rpx;
+  width: 195rpx;
+  display: block;
+}
+.tapeImg{
+  height: 130rpx;
+  width: 130rpx;
+  display: block;
+}
+.submit1{
+  height: 195rpx;
+  width: 195rpx;
+  margin: 80rpx auto 0;
+  padding: 0;
+  border-radius: 97rpx;
+}
+.submit{
+  width:130rpx;
+  height:130rpx;
+  margin: 196rpx auto 0;
+  padding: 0;
+  border-radius: 65rpx;
+}
+.style{
+  text-align: right;
+  margin-right: 50rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #CF0047;
+}
+.submit1::after{
+  border: none
+}
+.submit::after{
+  border: none;
+}
+.put_in{
+  text-align: center;
+  font-size: 24rpx;
+  color: #686868;
+  margin-top: 14rpx;
+  line-height: 24rpx;
+}
+.descript{
+  color: #333;
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.standard{
+  color: #bababa;
+  font-size: 26rpx;
+  /* height: 60rpx; */
+  line-height: 46rpx;
+}
+
+.center{
+  text-align: center;
+  margin-top: 200rpx;
+  font-size: 32rpx;
+  line-height: 56rpx;
+  color: #CF0047;
+}
+.xiniu{
+  height: 150rpx;
+  width: 150rpx;
+  display: block;
+  margin: 40rpx auto;
+}
+.potion{
+  position: absolute;
+  bottom: 100rpx;
+  text-align: center;
+  width: 300rpx;
+  left: 225rpx;
+}
